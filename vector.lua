@@ -14,7 +14,6 @@ local vec = { --Method metatable for metamethods.
     __index = vecDef,
     __unm = function(a)
 		local solved = Vector(0,0,0)
-        if type(b) == "number" then b = Vector(b,b,b) end
         solved.x = -a.x
         solved.y = -a.y
         solved.z = -a.z
